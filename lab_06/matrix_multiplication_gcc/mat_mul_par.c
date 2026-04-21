@@ -29,7 +29,7 @@ void mat_mul_par(SCALAR *a, SCALAR *b, SCALAR* c, int n)
 //   }
 // }
 
-// Cache blocking
+  // Cache blocking
   for (i = 0; i < n; i += BLS) {
     for (k = 0; k < n; k += BLS) {
       for (j = 0; j < n; j += BLS) {
